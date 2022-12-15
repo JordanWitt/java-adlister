@@ -1,12 +1,14 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!doctype html>
 <html>
 <head>
-    <title><%= "some title" %></title>
+    <title>Include Example</title>
 </head>
 <body>
-<jsp:include page="partials/navbar.jsp"/>
-<jsp:include page="partials/head.jsp"/>
-    <h1>You have logged in</h1>
+<nav>
+    <div><a>HOME</a></div> <div><a>ABOUT</a></div> <div><a>LOGIN</a></div>
+</nav>
+
 </body>
 </html>

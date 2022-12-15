@@ -7,6 +7,7 @@
     <title>Bookshop Website</title>
 </head>
 <body>
+<jsp:include page="partials/head.jsp"/>
 <div style="text-align: center">
     <h1>Admin Login</h1>
     <form action="login.jsp" method="post">
