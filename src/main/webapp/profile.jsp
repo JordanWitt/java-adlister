@@ -5,11 +5,6 @@
     <title><%= "some title" %></title>
 </head>
 <body>
-    <c:if test="true">
-        <h1 style="text-align: center"><a href="login.jsp">Login</a></h1>
-    </c:if>
-    <c:if test="false">
-        <h1><a href="profile.jsp">Profile</a></h1>
-    </c:if>
+    <h1>You have logged in</h1>
 </body>
 </html>
