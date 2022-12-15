@@ -36,7 +36,7 @@ public class HelloWorldServlet extends HttpServlet {
                         + "</h2>\n"
                         + "</body>"
                         + "</html>");
-//        The information being appended to the HTML page
+//        The information being appended to the HTML page\
     }
 
 }
