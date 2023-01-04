@@ -3,6 +3,7 @@ public class Ad {
     private long userId;
     private String title;
     private String description;
+    private String publisher;
 
     public Ad(long id, long userId, String title, String description) {
         this.id = id;
@@ -15,6 +16,9 @@ public class Ad {
         this.userId = userId;
         this.title = title;
         this.description = description;
+    }
+
+    public Ad(int id, String title, String description, String publisher) {
     }
 
     public long getId() {
@@ -47,5 +51,13 @@ public class Ad {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getPublisher() {
+        return publisher;
+    }
+
+    public void setPublisher(String publisher) {
+        this.publisher = publisher;
     }
 }
