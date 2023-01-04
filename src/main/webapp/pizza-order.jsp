@@ -5,7 +5,7 @@
 </head>
 <body>
 <jsp:include page="partials/head.jsp"/>
-<form action="pizza-order.jsp" method="post">
+<form action="/pizza-order" method="post">
 
     <label for="crust">What type of crust:</label>
     <select name="crust" id="crust">
