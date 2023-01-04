@@ -6,8 +6,9 @@
     <title>Include Example</title>
 </head>
 <body>
+<jsp:include page="/pickcolor.jsp"/>
 <nav>
-    <div><a>HOME</a></div> <div><a>ABOUT</a></div> <div><a>LOGIN</a></div>
+    <div><a>HOME</a></div> <div><a>ABOUT</a></div> <div></div>
 </nav>
 
 </body>
