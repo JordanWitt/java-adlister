@@ -1,8 +1,8 @@
 import java.util.ArrayList;
-
+import java.util.List;
 
 public class ArrayListProducts implements Products {
-    private List<Product> products = new ArrayList();
+    private final List<Product> products = new ArrayList();
 
 
     //Now: A constructor to put THREE PRODUCT OBJECTS inside of our arraylist to begin [test data, hard code data]
@@ -13,7 +13,6 @@ public class ArrayListProducts implements Products {
         insert(new Product("flux capacitors", 4999.99));
 
     }
-
     @Override
     public List<Product> all() {
         return this.products;
