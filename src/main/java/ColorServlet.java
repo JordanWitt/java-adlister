@@ -4,7 +4,7 @@ import javax.servlet.http.*;
 import java.io.*;
 
 @WebServlet(name = "/pickColor", urlPatterns = "/pickColor")
-public class pickColor extends HttpServlet {
+public class ColorServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("/pickcolor.jsp").forward(request, response);
@@ -16,14 +16,6 @@ public class pickColor extends HttpServlet {
         response.setContentType("text/html");
         request.getSession().setAttribute("Color", Color);
         request.getRequestDispatcher("viewcolor.jsp").forward(request, response);
-//        PrintWriter pw = response.getWriter();
-//        pw.println("<p>Color::" + Color + "</p>");
-//        pw.println("<html>");
-//        pw.println("<body bgcolor='Color'>");
-//        pw.println("<marquee><h1>WOO HOO ALL THE COLORS</h1></marquee>");
-//        pw.println("</body>");
-//        pw.println("</html>");
-//        pw.close();
     }
 }
 
