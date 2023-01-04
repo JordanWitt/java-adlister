@@ -1,10 +1,16 @@
-public class DaoFactory {
-    private static Ads adsDao;
+import java.sql.SQLException;
 
-    public static Ads getAdsDao() {
-        if (adsDao == null) {
-            adsDao = new ListAdsDao();
+public class DaoFactory {
+
+    private static Products productsDao;
+
+
+    public static Products getProductsDao() throws SQLException {
+        Config configObj = new Config();
+        if (productsDao == null) {
+            productsDao = new MySQLProducts(configObj); //go get THIS implementation [ArrayListProducts()] for our purposes DaoFactory!
         }
-        return adsDao;
+        return productsDao;
     }
+
 }
