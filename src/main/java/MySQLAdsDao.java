@@ -4,7 +4,7 @@ import java.util.List;
 
 
 public class MySQLAdsDao implements Ads {
-    private List<Ad> ads = new ArrayList<>();
+    private final List<Ad> ads = new ArrayList<>();
     private Connection connection = null;
 
     public MySQLAdsDao(Config c) throws SQLException {

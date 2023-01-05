@@ -14,7 +14,7 @@ public class MySQLAdsDaoTest {
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery("SELECT * FROM ads");
             while(rs.next()){
-                System.out.println("title: " + rs.getString(2) + " | description: " + rs.getString(3) + " | price: " + rs.getBigDecimal(4));
+                System.out.println("title: " + rs.getString(2) + " | description: " + rs.getString(3) + " | price: $" + rs.getBigDecimal(4));
             }
         }catch (Exception e){
             System.out.println(e);
