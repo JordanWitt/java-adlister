@@ -1,8 +1,34 @@
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ListAdsDao implements Ads {
     private List<Ad> ads;
+
+    @Override
+    public List<Ad> getAllAds() throws SQLException {
+        return null;
+    }
+
+    @Override
+    public Ad getAdById(int id) throws SQLException {
+        return null;
+    }
+
+    @Override
+    public void createAd(Ad ad) throws SQLException {
+
+    }
+
+    @Override
+    public void updateAd(Ad ad) throws SQLException {
+
+    }
+
+    @Override
+    public void deleteAd(int id) throws SQLException {
+
+    }
 
     public List<Ad> all() {
         if (ads == null) {

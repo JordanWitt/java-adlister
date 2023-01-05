@@ -1,4 +1,3 @@
-import java.MySQLAdsDao;
 import java.sql.SQLException;
 
 public class DaoFactory {
